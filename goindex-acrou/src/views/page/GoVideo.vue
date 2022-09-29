@@ -115,7 +115,7 @@ export default {
       }
     },
     loadSub(path, index) {
-      this.subtitle = path.substring(0, index) + ".vtt";
+      this.subtitle = "https://testing.kr-drama.workers.dev/0:/subtitles/" + path.substring(45, index) + ".vtt";
     },
     loadHls(options) {
       import("@/plugin/vplayer/hls").then((res) => {
